@@ -80,13 +80,21 @@
             </tr>
         </tbody>
     </table>
-    <form action = "POST">
+    <hr/>
+    <br />
+    <h1>Add New Directory</h1>
+    <br />
+    <form method="post" action = "adddir.php">
     <div class="mb-5">
-        Hello
+        <input class="form-control form-control-lg" type="text" placeholder="Business Name" name="name" id="name" required>
+        <br />
+        <input class="form-control" type="text" placeholder="Location" name="location" id="location"  required>
+        <br />
+        <input class="form-control form-control-sm" type="text" placeholder="Phone Number" name="phone" id="phone"  required>
+        <br />
+    <input type = "submit" value = "Add">
     </div>
-    <div class="mb-5">
-      <a href="#" class="btn btn-primary btn-lg px-4">Add New</a>
-    </div>
+   
         </form>
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
