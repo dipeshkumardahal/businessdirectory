@@ -84,7 +84,7 @@
     <br />
     <h1>Add New Directory</h1>
     <br />
-    <form method="post" action = "adddir.php">
+    <form method="post" action = "adddata.php">
     <div class="mb-5">
         <input class="form-control form-control-lg" type="text" placeholder="Business Name" name="name" id="name" required>
         <br />

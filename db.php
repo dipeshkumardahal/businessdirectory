@@ -1,18 +1,13 @@
 <?php
-$host= 'localhost';
-$user ='root';
-$pass='';
-$dbname='sodhpuch';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sodhpuch";
 
-
-$conn = mysqli_connect($host, $user, $pass, $dbname) or die();
-?>
-<?php
-$mysqli = new mysqli("localhost","root","","sodhpuch");
-
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($mysqli -> connect_errno) {
-  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-  exit();
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 ?>
